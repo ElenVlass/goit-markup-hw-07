@@ -7,6 +7,7 @@
 .works__title {
   margin-bottom: 0;
   @include font(18px, 2, 0.06em);
+  color: $titleTextColor;
 }
 .works__subtitle {
   margin-top: 4px;
@@ -39,20 +40,20 @@
 .works__thumb {
   position: relative;
   overflow: hidden;
-}
-.works__thumb::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $worksOverlay;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $worksOverlay;
 
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 250ms $timingFunction, transform 250ms $timingFunction;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 250ms $timingFunction, transform 250ms $timingFunction;
+  }
 }
 .works__link:hover .works__thumb::before,
 .works__link:focus .works__thumb::before {
