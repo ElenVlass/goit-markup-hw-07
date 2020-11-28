@@ -6,10 +6,7 @@
 }
 .works__title {
   margin-bottom: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 0.06em);
   color: $titleTextColor;
 }
 .works__subtitle {
@@ -50,9 +47,7 @@
   padding: 24px;
   align-items: center;
   color: $heroTitleColor;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(18px, 1.56);
   overflow: auto;
   opacity: 0;
   transform: translateY(100%);

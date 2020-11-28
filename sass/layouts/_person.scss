@@ -3,10 +3,7 @@
   color: $titleTextColor;
   margin-bottom: 10px;
   text-align: center;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+@include font(16px, 1.19, 0.01em, 500);
 }
 .person__desc {
   margin-top: 0;

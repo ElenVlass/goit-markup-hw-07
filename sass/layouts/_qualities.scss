@@ -1,7 +1,5 @@
 .qualities__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @include flex(flex, wrap, space-between);
 }
 .qualities__item {
   flex-basis: calc(100% / 4 - 30px);
@@ -41,6 +39,6 @@
   margin-top: 10px;
   margin-bottom: 0;
 }
-.qualities__caption{
-@extend %captions;
+.qualities__caption {
+  @extend %captions;
 }

@@ -33,7 +33,7 @@
   @include font(44px, 1.36, 0.6em, 900);
 }
 .button__hero {
-@extend %button;
+  @extend %button;
 }
 .button__hero {
   padding: 10px 32px;
@@ -41,14 +41,10 @@
   border: 1px solid transparent;
   border-radius: 4px;
 
+  @include font(16px, 1.87, 0.06em);
   color: $heroTitleColor;
   background-color: $accentColor;
-
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   text-align: center;
   transition: color 250ms $timingFunction,
     background-color 250ms $timingFunction;
