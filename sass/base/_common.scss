@@ -10,7 +10,8 @@ html {
 body {
   color: $primaryTextColor;
   font-family: "Roboto", sans-serif;
- @include font(14px, 1.71);
+  font-size: 14px;
+  line-height: 1.71;
 }
 h1,
 h2,
