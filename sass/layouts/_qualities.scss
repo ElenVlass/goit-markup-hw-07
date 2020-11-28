@@ -1,5 +1,7 @@
 .qualities__list {
-  @include flex(flex, wrap, space-between);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .qualities__item {
   flex-basis: calc(100% / 4 - 30px);

@@ -536,10 +536,11 @@ link {
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.06em;
   font-weight: 900;
 }
 
@@ -566,8 +567,8 @@ link {
 
 .qualities__list {
   display: flex;
-  justify-content: wrap;
-  align-items: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .qualities__item {
